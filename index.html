@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SaiDownloadedVideoPlayer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body background="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0Tm3jfO2tREZXVfXxhLG5_wTegJR-4ZEL_A&usqp=CAU">
+  <section id = "Lemma">
+      <h3 class = "text text-primary" style = "background-color: red;text-align: center;">Welcome to SaiDownloadedVideoPlayer! Please type out the hand you will be using to signal. Please do not make a typing error as our system will not be able to recognize your hand</h3>
+      <br>
+      <input id = "Hand" class = "col-xs-12 col-sm-9 col-md-6 col-lg-3">
+      <br>
+      <button class = "btn btn-success col-xs-12 col-sm-9 col-md-6 col-lg-3" onclick = "Decide()">Submit</button>
+    </section>
+  <section id = "Main" style = "display: none;">
+    <center>
+      <h3 class = "btn btn-warning heading">Welcome to SaiDownloadedVideoPlayer!
+        <br>
+        <span class = "note" id = "note"></span>
+      </h3>
+    <br><br>
+  </center>
+  <div class = "SpeedDiv">
+    <img src = disk.gif></img>
+    <h4 class = "Previous">
+      Previous Song:
+    </h4>
+  </div>
+  <div class = "VolumeDiv">
+    <img src = disk.gif></img>
+    <h4 class = "Next">
+      Next Song:
+    </h4>
+  </div>
+  <br>
+  <button class = "btn btn-danger" onclick = "Back()" id = "Back">Back</button>
+  </section>
+
+<script src="main.js"></script>
+</body>
+</html>
